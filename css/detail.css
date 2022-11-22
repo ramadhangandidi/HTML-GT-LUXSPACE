@@ -1,0 +1,15 @@
+.bg-light-grey{
+    background-color: #F9F9F9;
+}
+
+.bg-color-pink{
+    background-color: #F9CADA;
+}
+
+.border-radius-25{
+    border-radius: 25px;
+}
+
+.border-color-pink{
+    border: solid 2px #F9CADA;
+}

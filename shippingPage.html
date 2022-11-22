@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/detail.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/shippingPage.js"></script>
+    <title>Luxspace Login</title>
+  </head>
+  <body>
+    <!-- Nav Section -->
+    <nav class="navbar navbar-light justify-content-between pt-4 px-5">
+      <div class="ml-5"><img src="./assets/logo.png" alt="" /></div>
+      <div class="d-flex">
+        <a class="nav-link text-dark py-0" href="#">Showcase</a>
+        <a class="nav-link text-dark py-0" href="#">Catalog</a>
+        <a class="nav-link text-dark py-0" href="#">Delivery</a>
+        <a class="nav-link text-dark py-0" href="#">Rewards</a>
+        <a href=""><img src="./assets/cart-icon.png" alt="" /></a>
+      </div>
+    </nav>
+    <div class="d-flex pl-5 bg-light-grey py-4 mt-4">
+      <a class="nav-link text-dark py-0" href="">Home</a>
+      <span>/</span>
+      <a class="nav-link text-dark py-0" href="">Office Room</a>
+      <span>/</span>
+      <a class="nav-link text-dark py-0" href="/detailPage.html">Detail</a>
+      <span>/</span>
+      <a class="nav-link text-dark font-weight-bold py-0" href="">Shipping</a>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-6">
+        <!-- Form Section -->
+        <form class="border-color-pink rounded p-5" id="formShipping">
+          <h2 class="text-center mb-4">Shipping Form</h2>
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Enter your last name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="shippingEmail"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  placeholder="Enter city"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Postal Code</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="postalCode"
+                  placeholder="Enter postal code"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Address</label>
+            <textarea
+              class="form-control"
+              id="shippingAddress"
+              rows="3"
+              placeholder="Enter address"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn bg-color-pink">Submit</button>
+        </form>
+        <!-- Card Section -->
+        <div class="card-body d-none" id="card">
+          <h5 class="card-title" id="cardTitle"></h5>
+          <p class="card-text" id="cardText"></p>
+          <a href="/detailPage.html" class="btn bg-color-pink text-dark"
+            >Back</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <section class="bg-light-grey mt-5">
+      <div class="p-5">
+        <div class="d-flex justify-content-center">
+          <img src="/assets/logo.png" alt="" />
+        </div>
+        <div class="d-flex justify-content-around mt-5">
+          <div class="d-flex flex-column">
+            <p class="font-weight-bold">Overview</p>
+            <a class="text-dark mb-2" href="">Shipping</a>
+            <a class="text-dark mb-2" href="">Refund</a>
+            <a class="text-dark mb-2" href="">Promotion</a>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="font-weight-bold">Company</p>
+            <a class="text-dark mb-2" href="">About</a>
+            <a class="text-dark mb-2" href="">Carreer</a>
+            <a class="text-dark mb-2" href="">Contact Us</a>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="font-weight-bold">Explore</p>
+            <a class="text-dark mb-2" href="">Terms & Conds</a>
+            <a class="text-dark mb-2" href="">Privay Policy</a>
+            <a class="text-dark mb-2" href="">For Developer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <p class="text-center">
+      Copyright 2021 • All Rights Reserved LuxSpace by BuildWith Angga
+    </p>
+  </body>
+</html>

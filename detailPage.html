@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxspace</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="/js/detailPage.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-light justify-content-between pt-4 px-5">
+      <div class="ml-5"><img src="./assets/logo.png" alt="" /></div>
+      <div class="d-flex">
+        <a class="nav-link text-dark py-0" href="#">Showcase</a>
+        <a class="nav-link text-dark py-0" href="#">Catalog</a>
+        <a class="nav-link text-dark py-0" href="#">Delivery</a>
+        <a class="nav-link text-dark py-0" href="#">Rewards</a>
+        <a href=""><img src="./assets/cart-icon.png" alt="" /></a>
+      </div>
+    </nav>
+
+    <!-- Alert -->
+    <div
+      class="alert alert-dismissible fade show mt-2 d-none bg-color-pink"
+      role="alert"
+      id="alertId"
+    >
+      <p class="m-0 p-0"></p>
+      <button type="button" class="close">
+        <span id="closeAlert">&times;</span>
+      </button>
+    </div>
+
+    <!-- BreadCrumbs Section -->
+    <div class="d-flex pl-5 bg-light-grey py-4 mt-4">
+      <a class="nav-link text-dark py-0" href="">Home</a>
+      <span>/</span>
+      <a class="nav-link text-dark py-0" href="">Office Room</a>
+      <span>/</span>
+      <a class="nav-link text-dark font-weight-bold py-0" href="">Detail</a>
+    </div>
+
+    <!-- Body Section -->
+    <section class="mt-5">
+      <div class="px-5">
+        <div class="d-flex">
+          <div class="d-flex flex-column justify-content-between mr-3">
+            <img class="border-radius-25" src="./assets/side-1.png" alt="" />
+            <img class="border-radius-25" src="./assets/side-2.png" alt="" />
+            <img class="border-radius-25" src="./assets/side-3.png" alt="" />
+            <img class="border-radius-25" src="./assets/side-1.png" alt="" />
+            <img class="border-radius-25" src="./assets/side-2.png" alt="" />
+          </div>
+          <div class="mr-5">
+            <img
+              class="border-radius-25"
+              src="/assets/chair.png"
+              alt=""
+              id="mainImage"
+            />
+          </div>
+          <div class="py-4">
+            <h1>Chair Thatty</h1>
+            <p>IDR 12.000.000</p>
+            <a
+              href="shippingPage.html"
+              class="btn font-weight-bold text-dark bg-color-pink"
+              style="width: 230px; border-radius: 57px"
+            >
+              <span class="mr-3">
+                <img src="/assets/cart-icon.png" alt="" />
+              </span>
+              Add to cart
+            </a>
+            <hr />
+            <p class="font-weight-bold mt-4">About the product:</p>
+            <p>
+              Tailored to a level of perfection synonymous with that of a Savile
+              Row suit and with understated quality in the detail, Jetty has
+              been influenced by timeless 1950s style.
+            </p>
+            <p>
+              Providing a subtle nod to the past, Jetty also provides a perfect
+              solution for the way we work today. A comprehensive product
+              family, Jetty features a variety of elegant chairs and sofas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 mt-5 bg-light-grey">
+        <h3>Complete Your Room</h3>
+        <h3>With What We Designed</h3>
+        <div class="d-flex justify-content-between mt-4">
+          <div class="bg-white p-4 border-radius-25">
+            <a href="#" class="chairs">
+              <img class="border-radius-25" src="/assets/chair-1.png" alt="" />
+            </a>
+            <p class="font-weight-bold mt-3 my-0">Cangkir Mauttie</p>
+            <p>IDR 89.000.000</p>
+          </div>
+          <div class="bg-white p-4 border-radius-25">
+            <a href="#" class="chairs">
+              <img class="border-radius-25" src="/assets/chair-2.png" alt="" />
+            </a>
+            <p class="font-weight-bold mt-3 my-0">Saman Kakka</p>
+            <p>IDR 14.500.000</p>
+          </div>
+          <div class="bg-white p-4 border-radius-25">
+            <a href="#" class="chairs">
+              <img class="border-radius-25" src="/assets/chair-3.png" alt="" />
+            </a>
+            <p class="font-weight-bold mt-3 my-0">Lino Dino</p>
+            <p>IDR 22.000.000</p>
+          </div>
+          <div class="bg-white p-4 border-radius-25">
+            <a href="#" class="chairs">
+              <img class="border-radius-25" src="/assets/chair-4.png" alt="" />
+            </a>
+            <p class="font-weight-bold mt-3 my-0">Syail Ammeno</p>
+            <p>IDR 12.000.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section>
+      <div class="p-5">
+        <div class="d-flex justify-content-center">
+          <img src="/assets/logo.png" alt="" />
+        </div>
+        <div class="d-flex justify-content-around mt-5">
+          <div class="d-flex flex-column">
+            <p class="font-weight-bold">Overview</p>
+            <a class="text-dark mb-2" href="">Shipping</a>
+            <a class="text-dark mb-2" href="">Refund</a>
+            <a class="text-dark mb-2" href="">Promotion</a>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="font-weight-bold">Company</p>
+            <a class="text-dark mb-2" href="">About</a>
+            <a class="text-dark mb-2" href="">Carreer</a>
+            <a class="text-dark mb-2" href="">Contact Us</a>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="font-weight-bold">Explore</p>
+            <a class="text-dark mb-2" href="">Terms & Conds</a>
+            <a class="text-dark mb-2" href="">Privay Policy</a>
+            <a class="text-dark mb-2" href="">For Developer</a>
+          </div>
+          <div>
+            <p class="font-weight-bold">Special Letter</p>
+            <div class="input-group mb-3">
+              <form action="" class="d-flex" id="specialLetterForm">
+                <input
+                  type="email"
+                  class="form-control border-0 bg-light-grey"
+                  id="specialLetterInput"
+                  placeholder="Your email address"
+                  style="width: 330px"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="btn bg-color-pink"
+                  id="specialLetterButton"
+                >
+                  <img src="/assets/tele-icon.png" alt="" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <p class="text-center">
+      Copyright 2021 • All Rights Reserved LuxSpace by BuildWith Angga
+    </p>
+  </body>
+</html>
